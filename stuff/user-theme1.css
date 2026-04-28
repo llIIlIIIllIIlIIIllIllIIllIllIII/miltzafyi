@@ -1,0 +1,216 @@
+@font-face {
+  font-family:'jupiteroid-bold';
+  src:url('https://miltza.fyi/assets/Jupiteroid-Bold.ttf');
+}
+@font-face {
+  font-family:'overused-grotesk';
+  src:url('https://miltza.fyi/assets/OverusedGrotesk-Medium.otf');
+}
+@font-face {
+  font-family:'dotsies';
+  src:url('https://miltza.fyi/assets/Dotsies.ttf');
+}
+@font-face {
+  font-family:'n4noosem';
+  src:url('https://miltza.fyi/assets/N4NOOSE-Macaroni.ttf');
+}
+
+li[data-author-username="moonseyesys"] {
+    .message__5126c {
+        background-color:white;
+        padding-bottom: 6px;
+    }
+    &:hover {
+        background-color:white;
+    }
+    .embed__623de {
+        background-color: white;
+        background: url(https://miltza.fyi/assets/aegis.png) no-repeat;
+        background-size: 70px;
+        background-position: right top;
+        background-origin: 270px;
+        font-family: "overused-grotesk";
+        border-width: 2px;
+        border-color: rgb(128,128,128);
+        border-left-color: rgba(196 43 71) !important;
+        border-left-width: 5px;
+        border-radius: 0%;
+        .anchor_edefb8 {
+            font-family: 'overused-grotesk';
+            color: black;
+        }
+        .embedTitle__623de {
+                color: rgba(196 43 71);
+        }
+    }
+    .embedAuthorIcon__623de {
+        display: none;
+    }
+    .embedAuthorName__623de {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(128,128,128);
+        width: 100%;
+    }
+    .message__5126c.selected__5126c {
+        background-color:white;
+    }
+    .reaction__23977 {
+        background-color: rgba(196 43 71);
+    }
+    .reactionCount__23977 {
+        color: white;
+    }
+    span {
+        color: black;
+    }
+    .botTag_c19a55 {
+        display: none;
+    }
+
+    .headerText_c19a55 {
+        background-color: rgb(196 43 71);
+        border-style: solid;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-radius: 6px;
+        border-color: rgb(196 43 71);
+        
+    }
+    .avatar_c19a55 {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-origin: 50%;
+        border: black 2px;
+        background: url(https://miltza.fyi/assets/pfp40by40.gif) no-repeat;
+    }
+    .avatar_c19a55:hover {
+        animation-name: H1239581CCDA_bnuuyfadein;
+        animation-duration: 0.5s;
+        padding-right: 40px;
+    }
+    .contents_c19a55 span {
+        font-family: overused-grotesk;
+        padding-top: 4px;
+    }
+    .username_c19a55 {
+        color: white !important;
+        font-family: overused-grotesk !important;
+    }
+    .username_c19a55::before {
+        color: white !important;
+        font-family: overused-grotesk !important;
+        content: "+ "
+    }
+    .username_c19a55::after {
+        color: white !important;
+        font-family: overused-grotesk !important;
+        content: " +"
+    }
+    .vc-smyn-suffix {
+        color: black;
+    }
+}
+
+li[data-author-username="the_real_letter_j ☉ moonseye"] {
+    .message__5126c {
+        background-color:white;
+        padding-bottom: 6px;
+    }
+    &:hover {
+        background-color:white;
+    }
+    .embed__623de {
+        background-color: white;
+        background: url(https://miltza.fyi/assets/aegis.png) no-repeat;
+        background-size: 70px;
+        background-position: right top;
+        background-origin: 270px;
+        font-family: "overused-grotesk";
+        border-width: 2px;
+        border-color: rgb(128,128,128);
+        border-left-color: rgba(196 43 71) !important;
+        border-left-width: 5px;
+        border-radius: 0%;
+        .anchor_edefb8 {
+            font-family: 'n4noosem';
+            font-size: 10px;
+        }
+    }
+    .embedAuthorIcon__623de {
+        display: none;
+    }
+    .embedAuthorName__623de::before {
+        content: ' > REPLY : ';
+        font-family: "overused-grotesk";
+    }
+    .embedAuthorName__623de {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(128,128,128);
+    }
+    .embedAuthorName__623de::after {
+        content: '                           \a///';
+        margin-left: -2.3ch;
+    }
+    .message__5126c.selected__5126c {
+        background-color:white;
+    }
+    .reaction__23977 {
+        background-color: rgba(196 43 71);
+    }
+    .reactionCount__23977 {
+        color: white;
+    }
+    span {
+        color: black;
+    }
+    .botTag_c19a55 {
+        display: none;
+    }
+
+    .headerText_c19a55 {
+        background-color: rgb(196 43 71);
+        border-style: solid;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        border-radius: 6px;
+        border-color: rgb(196 43 71);
+        
+    }
+    .avatar_c19a55 {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-origin: 50%;
+        border: black 2px;
+        background: url(https://miltza.fyi/assets/pfp40by40.gif) no-repeat;
+    }
+    .avatar_c19a55:hover {
+        animation-name: H1239581CCDA_bnuuyfadein;
+        animation-duration: 0.5s;
+        padding-right: 40px;
+    }
+    .contents_c19a55 span {
+        font-family: overused-grotesk;
+        padding-top: 4px;
+    }
+    .username_c19a55 {
+        color: white !important;
+        font-family: overused-grotesk !important;
+    }
+    .username_c19a55::before {
+        color: white !important;
+        font-family: overused-grotesk !important;
+        content: "+ "
+    }
+    .username_c19a55::after {
+        color: white !important;
+        font-family: overused-grotesk !important;
+        content: " +"
+    }
+    .vc-smyn-suffix {
+        color: black;
+    }
+}
