@@ -17,10 +17,17 @@
 
 li[data-author-username="moonseyesys"] {
     .message__5126c {
+        background: url("https://miltza.fyi/assets/text.png") no-repeat;
+        background-position: right 2.5px bottom 2.5px;
+        background-size: 60px;
         background-color:white;
-        padding-bottom: 6px;
+        border-radius: 0px;
+        padding-top: 3px;
     }
     &:hover {
+        background: url("https://miltza.fyi/assets/text.png") no-repeat;
+        background-position: right 2.5px bottom 2.5px;
+        background-size: 60px;
         background-color:white;
     }
     .embed__623de {
@@ -53,6 +60,9 @@ li[data-author-username="moonseyesys"] {
         width: 100%;
     }
     .message__5126c.selected__5126c {
+        background: url("https://miltza.fyi/assets/text.png") no-repeat;
+        background-position: right 2.5px bottom 2.5px;
+        background-size: 60px;
         background-color:white;
     }
     .reaction__23977 {
@@ -108,6 +118,19 @@ li[data-author-username="moonseyesys"] {
         font-family: overused-grotesk !important;
         content: " +"
     }
+    .repliedMessage_c19a55 > .username_c19a55 {
+        color: black !important;
+    }
+    .repliedMessage_c19a55 > .username_c19a55::before {
+        color: black !important;
+        font-family: overused-grotesk !important;
+        content: "+ "
+    }
+    .repliedMessage_c19a55 > .username_c19a55::after {
+        color: black !important;
+        font-family: overused-grotesk !important;
+        content: " +"
+    }
     .vc-smyn-suffix {
         color: black;
     }
@@ -115,10 +138,17 @@ li[data-author-username="moonseyesys"] {
 
 li[data-author-username="the_real_letter_j ☉ moonseye"] {
     .message__5126c {
+        background: url("https://miltza.fyi/assets/text.png") no-repeat;
+        background-position: right 2.5px bottom 2.5px;
+        background-size: 60px;
         background-color:white;
-        padding-bottom: 6px;
+        border-radius: 0px;
+        padding-top: 3px;
     }
     &:hover {
+        background: url("https://miltza.fyi/assets/text.png") no-repeat;
+        background-position: right 2.5px bottom 2.5px;
+        background-size: 60px;
         background-color:white;
     }
     .embed__623de {
@@ -155,6 +185,9 @@ li[data-author-username="the_real_letter_j ☉ moonseye"] {
         margin-left: -2.3ch;
     }
     .message__5126c.selected__5126c {
+        background: url("https://miltza.fyi/assets/text.png") no-repeat;
+        background-position: right 2.5px bottom 2.5px;
+        background-size: 60px;
         background-color:white;
     }
     .reaction__23977 {
