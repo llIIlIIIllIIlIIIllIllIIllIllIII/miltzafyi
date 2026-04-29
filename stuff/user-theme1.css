@@ -15,6 +15,9 @@
   src:url('https://miltza.fyi/assets/N4NOOSE-Macaroni.ttf');
 }
 
+:root {
+    --cicadamagenta: rgba(196 43 71);
+}
 li[data-author-username="moonseyesys"] {
     .message__5126c {
         background: url("https://miltza.fyi/assets/text.png") no-repeat;
@@ -31,7 +34,7 @@ li[data-author-username="moonseyesys"] {
         background-color:white;
     }
     .message__5126c.mentioned__5126c::before {
-        background-color: rgb(196 43 71);
+        background-color: var(--cicadamagenta);
         width: 5px;
     }
     .embed__623de:not(.inlineMediaEmbed__623de) {
@@ -43,7 +46,7 @@ li[data-author-username="moonseyesys"] {
         font-family: "overused-grotesk";
         border-width: 2px;
         border-color: rgb(128,128,128);
-        border-left-color: rgba(196 43 71) !important;
+        border-left-color: var(--cicadamagenta) !important;
         border-left-width: 5px;
         border-radius: 0%;
         .anchor_edefb8 {
@@ -51,7 +54,7 @@ li[data-author-username="moonseyesys"] {
             color: black;
         }
         .embedTitle__623de {
-                color: rgba(196 43 71);
+                color: var(--cicadamagenta);
         }
     }
     .embedAuthorIcon__623de {
@@ -63,6 +66,91 @@ li[data-author-username="moonseyesys"] {
         border-bottom-color: rgb(128,128,128);
         width: 100%;
     }
+    .wrapper_cf09d8 {
+        background-color: white;
+        background: url(https://miltza.fyi/assets/aegishighres.png) no-repeat;
+        background-size: 60px;
+        background-position: right 10px top 10px;
+        background-origin: 270px;
+        font-family: "overused-grotesk";
+        border-width: 2px;
+        border-color: rgb(128,128,128);
+        border-left-color: var(--cicadamagenta) !important;
+        border-left-width: 5px;
+        border-radius: 0%;
+        .anchor_edefb8 {
+            font-family: 'overused-grotesk';
+            color: black;
+        }
+        .embedTitle__623de {
+                color: var(--cicadamagenta);
+        }
+    }
+    .audioControls_cf09d8 {
+        background-color: rgba(0,0,0,0);
+        font-family: "overused-grotesk";
+        border-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+        border-width: 2px;
+        border-color: rgb(230,230,230);
+        border-radius: 0%;
+        .anchor_edefb8 {
+            font-family: 'overused-grotesk';
+            color: black;
+        }
+        .controlIcon_cf09d8 {
+            color: black;
+        }
+        .buffer_b26b79.fakeEdges_b26b79 {
+            background-color: black;
+        }
+        .mediaBarProgress_b26b79 {
+            background-color: var(--cicadamagenta);
+        }
+        .mediaBarProgress_b26b79::before {
+            background-color: var(--cicadamagenta);
+        }
+        .mediaBarProgress_b26b79::after {
+            background-color: var(--cicadamagenta);
+        }
+        .mediaBarGrabber_b26b79 {
+            background-color: var(--cicadamagenta);
+        }
+    }
+    .newMosaicStyle__4d95d.mosaicItemContent__6c706.container__4d95d {
+        .textContainer__4d95d {
+            background-color: black;
+            font-family: "overused-grotesk";
+            border-width: 2px;
+            border-color: var(--cicadamagenta);
+            border-radius: 0%;
+            .anchor_edefb8 {
+                font-family: 'overused-grotesk';
+                color: black;
+            }
+            .embedTitle__623de {
+                    color: var(--cicadamagenta);
+            }
+            .codeView__4d95d {
+                background-color: black;
+            }
+        }
+        .footer__4d95d {
+            background-color: black;
+            font-family: "overused-grotesk";
+            border-width: 2px;
+            border-color: var(--cicadamagenta);
+            border-radius: 0%;
+            color: black;
+            .fileName__4d95d {
+                font-family: 'overused-grotesk';
+            }
+            .text-xs/normal_cf4812 {
+                font-family: 'overused-grotesk';
+            }
+        }
+    }
     .message__5126c.selected__5126c {
         background: url("https://miltza.fyi/assets/text.png") no-repeat;
         background-position: right 2.5px bottom 2.5px;
@@ -70,7 +158,7 @@ li[data-author-username="moonseyesys"] {
         background-color:white;
     }
     .reaction__23977 {
-        background-color: rgba(196 43 71);
+        background-color: var(--cicadamagenta);
     }
     .reactionCount__23977 {
         color: white;
@@ -83,12 +171,12 @@ li[data-author-username="moonseyesys"] {
     }
 
     .headerText_c19a55 {
-        background-color: rgb(196 43 71);
+        background-color: var(--cicadamagenta);
         border-style: solid;
         border-left-width: 5px;
         border-right-width: 5px;
         border-radius: 6px;
-        border-color: rgb(196 43 71);
+        border-color: var(--cicadamagenta);
         
     }
     .avatar_c19a55 {
@@ -156,7 +244,7 @@ li[data-author-username="the_real_letter_j ☉ moonseye"] {
         background-color:white;
     }
     .message__5126c.mentioned__5126c::before {
-        background-color: rgb(196 43 71);
+        background-color: var(--cicadamagenta);
         width: 5px;
     }
     .embed__623de:not(.inlineMediaEmbed__623de) {
@@ -168,7 +256,7 @@ li[data-author-username="the_real_letter_j ☉ moonseye"] {
         font-family: "overused-grotesk";
         border-width: 2px;
         border-color: rgb(128,128,128);
-        border-left-color: rgba(196 43 71) !important;
+        border-left-color: var(--cicadamagenta) !important;
         border-left-width: 5px;
         border-radius: 0%;
         .anchor_edefb8 {
@@ -192,6 +280,71 @@ li[data-author-username="the_real_letter_j ☉ moonseye"] {
         content: '                           \a///';
         margin-left: -2.3ch;
     }
+    .audioControls_cf09d8 {
+        background-color: rgba(0,0,0,0);
+        font-family: "overused-grotesk";
+        border-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+        border-width: 2px;
+        border-color: rgb(230,230,230);
+        border-radius: 0%;
+        .anchor_edefb8 {
+            font-family: 'overused-grotesk';
+            color: black;
+        }
+        .controlIcon_cf09d8 {
+            color: black;
+        }
+        .buffer_b26b79.fakeEdges_b26b79 {
+            background-color: black;
+        }
+        .mediaBarProgress_b26b79 {
+            background-color: var(--cicadamagenta);
+        }
+        .mediaBarProgress_b26b79::before {
+            background-color: var(--cicadamagenta);
+        }
+        .mediaBarProgress_b26b79::after {
+            background-color: var(--cicadamagenta);
+        }
+        .mediaBarGrabber_b26b79 {
+            background-color: var(--cicadamagenta);
+        }
+    }
+    .newMosaicStyle__4d95d.mosaicItemContent__6c706.container__4d95d {
+        .textContainer__4d95d {
+            background-color: black;
+            font-family: "overused-grotesk";
+            border-width: 2px;
+            border-color: var(--cicadamagenta);
+            border-radius: 0%;
+            .anchor_edefb8 {
+                font-family: 'overused-grotesk';
+                color: black;
+            }
+            .embedTitle__623de {
+                    color: var(--cicadamagenta);
+            }
+            .codeView__4d95d {
+                background-color: black;
+            }
+        }
+        .footer__4d95d {
+            background-color: black;
+            font-family: "overused-grotesk";
+            border-width: 2px;
+            border-color: var(--cicadamagenta);
+            border-radius: 0%;
+            color: black;
+            .fileName__4d95d {
+                font-family: 'overused-grotesk';
+            }
+            .text-xs/normal_cf4812 {
+                font-family: 'overused-grotesk';
+            }
+        }
+    }
     .message__5126c.selected__5126c {
         background: url("https://miltza.fyi/assets/text.png") no-repeat;
         background-position: right 2.5px bottom 2.5px;
@@ -199,7 +352,7 @@ li[data-author-username="the_real_letter_j ☉ moonseye"] {
         background-color:white;
     }
     .reaction__23977 {
-        background-color: rgba(196 43 71);
+        background-color: var(--cicadamagenta);
     }
     .reactionCount__23977 {
         color: white;
@@ -212,12 +365,12 @@ li[data-author-username="the_real_letter_j ☉ moonseye"] {
     }
 
     .headerText_c19a55 {
-        background-color: rgb(196 43 71);
+        background-color: var(--cicadamagenta);
         border-style: solid;
         border-left-width: 5px;
         border-right-width: 5px;
         border-radius: 6px;
-        border-color: rgb(196 43 71);
+        border-color: var(--cicadamagenta);
         
     }
     .avatar_c19a55 {
