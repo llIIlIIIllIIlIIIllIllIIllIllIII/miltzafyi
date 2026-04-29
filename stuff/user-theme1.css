@@ -30,6 +30,10 @@ li[data-author-username="moonseyesys"] {
         background-size: 60px;
         background-color:white;
     }
+    .message__5126c.mentioned__5126c::before {
+        background-color: rgb(196 43 71);
+        width: 5px;
+    }
     .embed__623de:not(.inlineMediaEmbed__623de) {
         background-color: white;
         background: url(https://miltza.fyi/assets/aegishighres.png) no-repeat;
@@ -150,6 +154,10 @@ li[data-author-username="the_real_letter_j ☉ moonseye"] {
         background-position: right 2.5px bottom 2.5px;
         background-size: 60px;
         background-color:white;
+    }
+    .message__5126c.mentioned__5126c::before {
+        background-color: rgb(196 43 71);
+        width: 5px;
     }
     .embed__623de:not(.inlineMediaEmbed__623de) {
         background-color: white;
