@@ -37,6 +37,9 @@ li[data-author-username="moonseyesys"] {
         background-color: var(--cicadamagenta);
         width: 5px;
     }
+    .scrollbarGhostHairline_da3286 {
+        color: black;
+    }
     .embed__623de:not(.inlineMediaEmbed__623de) {
         background-color: white;
         background: url(https://miltza.fyi/assets/aegishighres.png) no-repeat;
