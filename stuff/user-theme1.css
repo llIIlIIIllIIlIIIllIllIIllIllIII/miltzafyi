@@ -1,3 +1,8 @@
+@font-face {
+  font-family:'overused-grotesk';
+  src:url('https://miltza.fyi/assets/SpaceMono-Regular.woff');
+}
+
 :root {
     --cicadamagenta: rgba(0 255 255);
 }
@@ -173,15 +178,10 @@ li[data-author-username="moonseyesys"] {
     .timestampVisibleOnHover_c19a55 {
         display: none;
     }
-    .repliedMessage_c19a55 > .username_c19a55::before {
-        color: black !important;
+    .repliedMessage_c19a55 > .username_c19a55 {
+        color: var(--cicadamagenta) !important;
+        filter: none;
         font-family: overused-grotesk !important;
-        content: "+ "
-    }
-    .repliedMessage_c19a55 > .username_c19a55::after {
-        color: black !important;
-        font-family: overused-grotesk !important;
-        content: " +"
     }
     .vc-smyn-suffix {
         color: black;
