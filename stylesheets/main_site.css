@@ -55,7 +55,7 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 1em;
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
         position: relative;
         border-bottom: 2px solid;
         background: var(--dark-color);
