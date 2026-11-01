@@ -1,0 +1,101 @@
+
+@font-face {
+  font-family:'space-mono';
+  src:url('https://miltza.fyi/assets/SpaceMono-Regular.woff');
+}
+@font-face {
+  font-family:'beech';
+  src:url('https://miltza.fyi/assets/Beech.woff');
+}
+
+:root {
+    --obesk-color: rgb(255,0,255);
+    --friend-color: rgb(0,255,255);
+    --dark-color: rgb(0,0,0);
+    --light-color: rgb(255,255,255);
+    --baseTransform: translateX(0);
+}
+
+@keyframes HOVER {
+    0% { transform: var(--baseTransform) translateY(5%) }
+    100% { transform: var(--baseTransform) translateY(-5%) }
+}
+
+@keyframes REVERSE_HOVER {
+    0% { transform: var(--baseTransform) translateY(-5%) }
+    100% { transform: var(--baseTransform) translateY(5%) }
+}
+
+@keyframes MINIMAL_HOVER {
+    0% { transform: var(--baseTransform) translateY(1%) }
+    100% { transform: var(--baseTransform) translateY(-1%) }
+}
+
+body {
+    padding: 0.5em 9em;
+    background-color: var(--dark-color);
+    background-image: url("../assets/fadeinlongc.gif");
+    background-size: cover;
+}
+
+.topbar-obesk {
+    text-transform: uppercase;
+    font-family: beech, monospace;
+}
+.topbar-cousinly {
+    text-transform: none;
+    font-family: space-mono, monospace;
+}
+
+.main-container {
+    font-family: space-mono, monospace;
+    color: var(--friend-color);
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 4vh;
+        position: relative;
+        border-bottom: 2px solid;
+        background: var(--dark-color);
+        color: var(--friend-color);
+        padding: 2vh 4vh;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px;
+        animation: MINIMAL_HOVER 5s ease-in-out infinite alternate;
+        .topbar-title {
+            font-size: 42px;
+            font-weight: bold;
+            filter: drop-shadow(0px 0px 32px var(--friend-color));
+            animation: HOVER 3s ease-in-out infinite alternate;
+        }
+        .miltza-portrait {
+            height: 64px;
+            border: var(--friend-color) 4px double;
+            border-radius: 5em;
+            background-color: var(--dark-color);
+            background-image: url("../assets/corruripple.gif");
+            background-repeat: repeat;
+            background-size: cover;
+            filter: drop-shadow(0px 0px 16px var(--friend-color));
+            animation: MINIMAL_HOVER 3s ease-in-out infinite alternate;
+        }
+    }
+}
+.real-main-container {
+    font-family: space-mono, monospace;
+    color: var(--friend-color);
+    height: 100%;
+    margin: 1vh;
+    border-radius: 20px;
+    border: 2px solid;
+    background: url(../assets/dithertile.gif), url(../assets/spotgradient.gif), url(../assets/fadein.gif), var(--friend-color);
+    background-size: 5px 5px, 425%;
+    background-repeat: repeat, no-repeat;
+    padding: 3vh 3vh;
+    position: relative;
+    border: 0;
+    border: 2px solid var(--friend-color);
+    box-shadow: 0px 0px 10px inset var(--friend-color);
+}
