@@ -32,7 +32,6 @@
 }
 
 body {
-    padding: 2em 18%;
     background-color: var(--dark-color);
     background-image: url("../assets/fadeinlongc.gif");
     background-size: cover;
@@ -48,6 +47,7 @@ body {
 }
 
 .main-container {
+    padding: 2em 18%;
     font-family: space-mono, monospace;
     color: var(--friend-color);
     .topbar {

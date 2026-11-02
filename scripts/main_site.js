@@ -38,7 +38,33 @@ function aizoaizowhoisnande(element) {
         }, 100 * count);
     });
 }
+function gojowillreturninepisode500(element) {
+    var count = 1;
+    var shuffledChildren = shuffle(element.children);
+    [...shuffledChildren].forEach((child) => {
+        count += 1
+        child.classList.toggle('topbar-obesk');
+        child.classList.toggle('topbar-cousinly');
+        setTimeout(() => {
+            child.classList.toggle('topbar-obesk');
+            child.classList.toggle('topbar-cousinly');
+        }, 50);
+        setTimeout(() => {
+            child.classList.toggle('topbar-obesk');
+            child.classList.toggle('topbar-cousinly');
+        }, 100);
+    });
+}
 
-setTimeout(() => {
-    aizoaizowhoisnande(textElement);
-}, 1000);
+(async () => {
+    while (true) {
+        await new Promise(resolve => setTimeout(() => {
+            aizoaizowhoisnande(textElement);
+            resolve();
+        }, 4000));
+        await new Promise(resolve => setTimeout(() => {
+            gojowillreturninepisode500(textElement);
+            resolve();
+        }, 12000));
+    }
+})();
