@@ -93,13 +93,25 @@ body::before {
 
 }
 
+@property --radial-gradient-alpha {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+
 .link {
   width: 50vh;
   height: 50vh;
-  background: transparent;
+  background: radial-gradient(rgba(0,255,255,var(--radial-gradient-alpha)),rgba(0,255,255,0));
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
+  --radial-gradient-alpha: 0;
+  transition:
+    --radial-gradient-alpha 1s ease;
+  &:hover {
+    --radial-gradient-alpha: 0.5;
+  }
 }
