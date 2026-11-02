@@ -2,10 +2,13 @@ const textElement = document.getElementById('topbarTitle');
 const textContent = textElement.textContent;
 
 textElement.textContent = '';
+var spanCount = 0;
 [...textContent].forEach((char) => {
+    spanCount += 1;
     const span = document.createElement('span');
     span.textContent = char === ' ' ? '\u00A0' : char; 
     span.classList.add("topbar-obesk");
+    span.style.animationDelay = "-" + (spanCount * 0.25).toString() + "s";
     textElement.appendChild(span);
 });
 
