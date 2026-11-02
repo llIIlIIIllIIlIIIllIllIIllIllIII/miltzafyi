@@ -32,10 +32,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--dark-color);
     background-image: url("../assets/fadeinlongc.gif");
     background-size: 100%;
     background-repeat: repeat-x;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100dvh;
 }
 
 .topbar-obesk {
@@ -147,6 +152,10 @@ body {
             }
         }
     }
+}
+.the88x31s {
+    padding: 8px;
+    margin-top: auto;
 }
 .real-main-container {
     font-family: space-mono, monospace;
