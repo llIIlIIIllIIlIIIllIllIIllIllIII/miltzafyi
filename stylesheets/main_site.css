@@ -34,7 +34,8 @@
 body {
     background-color: var(--dark-color);
     background-image: url("../assets/fadeinlongc.gif");
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: repeat-x;
 }
 
 .topbar-obesk {
@@ -150,7 +151,6 @@ body {
 .real-main-container {
     font-family: space-mono, monospace;
     color: var(--friend-color);
-    height: 100%;
     margin: 1vh;
     border-radius: 20px;
     border: 2px solid;
