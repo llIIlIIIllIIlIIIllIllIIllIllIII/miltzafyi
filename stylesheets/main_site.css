@@ -47,7 +47,7 @@ body {
 }
 
 .main-container {
-    padding: 2em 18%;
+    padding: 5vh 20%;
     font-family: space-mono, monospace;
     color: var(--friend-color);
     .topbar {
@@ -70,16 +70,80 @@ body {
             filter: drop-shadow(0px 0px 32px var(--friend-color));
             animation: HOVER 3s ease-in-out infinite alternate;
         }
+        .topbar-item {
+            a {
+                color: var(--friend-color);
+                transition:
+                    filter 0.2s ease;
+                &:hover {
+                    filter: drop-shadow(0px 0px 12px var(--friend-color));
+                }
+                .tooltip {
+                    width: 170px;
+                    background-color: var(--dark-color);
+                    color: var(--friend-color);
+                    text-align: center;
+                    padding: 2px 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: 100%;
+                    left: 50%;
+                    border: 2px var(--friend-color) solid;
+                    border-radius: 5em;
+                    margin-left: -85px;
+                    filter: opacity(0);
+                    box-shadow: 0px 0px 10px inset var(--friend-color);
+                    transition:
+                        filter 0.2s ease;
+                }
+                &:hover .tooltip {
+                    filter: opacity(100);
+                }
+            }
+        }
+        .youarehere {
+            a {
+                color: var(--light-color);
+                font-weight: bold;
+                transition:
+                    filter 0.2s ease;
+                &:hover {
+                    filter: drop-shadow(0px 0px 12px var(--light-color));
+                }
+            }
+        }
         .miltza-portrait {
+            width: 64px;
             height: 64px;
             border: var(--friend-color) 4px double;
             border-radius: 5em;
             background-color: var(--dark-color);
-            background-image: url("../assets/corruripple.gif");
+            background-image: url("../assets/Miltza_Portrait.gif"), url("../assets/corruripple.gif");
             background-repeat: repeat;
             background-size: cover;
             filter: drop-shadow(0px 0px 16px var(--friend-color));
             animation: MINIMAL_HOVER 3s ease-in-out infinite alternate;
+            .secret-portrait-text {
+                width: 100px;
+                background-color: var(--dark-color);
+                color: var(--friend-color);
+                text-align: center;
+                padding: 2px 0;
+                position: absolute;
+                z-index: 1;
+                top: 100%;
+                left: 50%;
+                border: 2px var(--friend-color) solid;
+                border-radius: 5em;
+                margin-left: -50px;
+                filter: opacity(0);
+                box-shadow: 0px 0px 10px inset var(--friend-color);
+                transition:
+                    filter 0.2s ease;
+            }
+            &:hover .secret-portrait-text {
+                filter: opacity(100);
+            }
         }
     }
 }
@@ -98,4 +162,25 @@ body {
     border: 0;
     border: 2px solid var(--friend-color);
     box-shadow: 0px 0px 10px inset var(--friend-color);
+}
+
+.creation-year {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 4px double var(--friend-color);
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+.creation-month {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--friend-color);
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+}
+
+.music {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 4px;
 }
