@@ -58,6 +58,31 @@ function gojowillreturninepisode500(element) {
         }, 100);
     });
 }
+[...document.querySelectorAll("details")].forEach((details) => {
+    details.addEventListener("toggle", (event) => {
+        var toggleSound = new Audio("./assets/obeskClick.ogg");
+        toggleSound.volume = 0.25;
+        toggleSound.play();
+    })
+});
+
+[...document.querySelectorAll("a")].forEach((details) => {
+    details.addEventListener("click", (event) => {
+        var toggleSound = new Audio("./assets/obeskClick.ogg");
+        toggleSound.volume = 0.25;
+        toggleSound.play();
+    })
+});
+
+var shouldHover = [...document.querySelectorAll("summary"), ...document.querySelectorAll('a')];
+
+shouldHover.forEach((details) => {
+    details.addEventListener("mouseenter", (event) => {
+        var toggleSound = new Audio("./assets/obeskHover.ogg");
+        toggleSound.volume = 0.25;
+        toggleSound.play();
+    })
+});
 
 (async () => {
     while (true) {
