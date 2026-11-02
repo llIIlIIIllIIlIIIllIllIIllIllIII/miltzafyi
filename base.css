@@ -92,3 +92,14 @@ body::before {
   animation: 120s linear infinite layer2-scroll;
 
 }
+
+.link {
+  width: 50vh;
+  height: 50vh;
+  background: transparent;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
