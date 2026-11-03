@@ -169,6 +169,12 @@ body {
 
 .the88x31s {
     padding: 8px;
+    padding-left: 24px;
+    border-radius: 5em;
+    background: url(../assets/dithertile.gif), var(--friend-color);
+    background-size: 3px;
+    border: 4px var(--friend-color) double;
+    box-shadow: 0px 0px 10px inset var(--friend-color);
     margin-top: auto;
 }
 .img88x31 {
@@ -179,6 +185,9 @@ body {
     image-rendering: pixelated;                 /* Universal support since 2021   */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+.img88x31-image {
+    box-shadow: 0px 0px 10px var(--dark-color);
 }
 .real-main-container {
     font-family: space-mono, monospace;
