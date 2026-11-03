@@ -223,3 +223,9 @@ details[open]::details-content {
     font-weight: normal;
     margin-bottom: 4px;
 }
+
+.divider {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px var(--friend-color) dashed;
+}
