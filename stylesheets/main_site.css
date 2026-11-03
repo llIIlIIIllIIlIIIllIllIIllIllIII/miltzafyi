@@ -166,6 +166,7 @@ body {
         color: var(--obesk-color);
     }
 }
+
 .the88x31s {
     padding: 8px;
     margin-top: auto;
@@ -175,6 +176,7 @@ body {
     color: var(--friend-color);
     margin: 1vh;
     border-radius: 20px;
+    text-wrap-mode: wrap;
     border: 2px solid;
     background: url(../assets/dithertile.gif), url(../assets/spotgradient.gif), url(../assets/fadein.gif), var(--friend-color);
     background-size: 5px 5px, 425%;
@@ -228,4 +230,61 @@ details[open]::details-content {
     margin-top: 16px;
     margin-bottom: 8px;
     border-bottom: 1px var(--friend-color) dashed;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 2vh 3%;
+        .topbar {
+            flex-direction: column;
+            justify-content: center; 
+            .topbar-title {
+                margin-top: 8px;
+                margin-bottom: 4px;
+                font-size: 36px;
+            }
+            .topbar-item {
+                background-color: var(--dark-color);
+                border: 2px var(--friend-color) solid;
+                padding: 6px;
+                box-shadow: 0px 0px 10px inset var(--friend-color);
+                a {
+                    color: var(--friend-color);
+                }
+                border-radius: 50vh;
+            }
+            a {
+                color: var(--friend-color);
+            }
+            .miltza-portrait {
+                background: none;
+                background-color: var(--dark-color);
+                padding: 6px;
+                border-radius: 50vh;
+                border: 2px var(--friend-color) solid;
+                box-shadow: 0px 0px 10px inset var(--friend-color);
+                height: auto;
+                width: auto;
+                color: var(--friend-color);
+                &::after {
+                    content: "about me";
+                    color: var(--friend-color);
+                }
+                filter: none;
+                .secret-portrait-text {
+                    display: none;
+                }
+            }
+        }
+    }
+    details {
+        div {
+            overflow-wrap: break-word;
+        }
+    }
+    .the88x31s {
+        padding: 24px;
+        margin-top: auto;
+    }
 }
