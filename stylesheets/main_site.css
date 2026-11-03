@@ -171,6 +171,9 @@ body {
     padding: 8px;
     margin-top: auto;
 }
+.img88x31 {
+    image-rendering: pixelated;
+}
 .real-main-container {
     font-family: space-mono, monospace;
     color: var(--friend-color);
