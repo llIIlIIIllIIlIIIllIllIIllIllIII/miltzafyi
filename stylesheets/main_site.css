@@ -179,6 +179,14 @@ body {
     margin-top: auto;
 }
 .img88x31 {
+    width: 88px;
+    height: 31px;
+    color: var(--dark-color);
+}
+.img88x31-image {
+    box-shadow: 0px 0px 10px var(--dark-color);
+    width: 88px;
+    height: 31px;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
     image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -186,9 +194,6 @@ body {
     image-rendering: pixelated;                 /* Universal support since 2021   */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
-.img88x31-image {
-    box-shadow: 0px 0px 10px var(--dark-color);
 }
 .real-main-container {
     font-family: space-mono, monospace;
