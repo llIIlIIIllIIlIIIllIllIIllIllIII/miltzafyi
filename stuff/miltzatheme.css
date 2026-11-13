@@ -1,0 +1,43 @@
+#chat .msg[data-from="miltza"] {
+  align-items: center;
+  .from {
+    padding: 0 12px 0 0px;
+    height: auto;
+    top: auto;
+    bottom: auto;
+    line-height: 0;
+    width: auto;
+    .user {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 64px !important;
+      height: 64px !important;
+      background: url("https://collective.miltza.fyi/uploads/eb68055d17851a33/Miltza_Portrait.gif") var(--dark-color);
+      background-size: cover;
+      background-position: center;
+      border: 2px double var(--obesk-color);
+      border-radius: 50%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .content {
+    display: block;
+    height: 100%;
+  }
+}
+#chat .msg[data-from="miltza"].self {
+  .from {
+    padding: 0 0px 0 12px;
+  }
+}
+#chat .msg[data-type="message"][data-from="miltza"] + .msg[data-type="message"][data-from="miltza"] .from {
+  display: none;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#chat .msg[data-type="message"][data-from="miltza"] + .msg[data-type="message"][data-from="miltza"] {
+  margin-top: 2px;
+}
