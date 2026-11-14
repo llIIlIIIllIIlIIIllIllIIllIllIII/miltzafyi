@@ -1,9 +1,9 @@
 :root {
-    --vailzu-pfp: url("https://collective.vailzu.fyi/uploads/5d3192fd315fbfa0/homunculusmuddpfp2.png");
+    --vailzu-pfp: url("https://collective.miltza.fyi/uploads/5d3192fd315fbfa0/homunculusmuddpfp2.png");
     --vailzu-theme-color: rgb(0,255,255);
 }
 
-#chat .msg[data-from="vailzu"] {
+#chat .msg[data-type="message"][data-from="vailzu"] {
     align-items: center;
     border: 1px var(--vailzu-theme-color) solid;
     margin-left: auto;
@@ -92,7 +92,7 @@
         z-index: -2;
     }
 }
-#chat .msg[data-from="vailzu"].self {
+#chat .msg[data-type="message"][data-from="vailzu"].self {
     margin-left: 8px;
     margin-right: auto;
     &::before {
@@ -103,11 +103,8 @@
         right: -0.95em !important;
         left: auto;
     }
-    .from {
-        margin-left: 0px;
-    }
     .time {
-        order: -1;
+        text-align: right
     }
 }
 #chat .msg[data-type="message"][data-from="vailzu"] + .msg[data-type="message"][data-from="vailzu"] .from,
