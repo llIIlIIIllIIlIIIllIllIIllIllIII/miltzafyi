@@ -1,5 +1,5 @@
 :root {
-    --mudkipghast-pfp: url("https://cdn.tupperbox.app/pfp/544661185967161364/aEqnALRFl9BV6ZGw.webp");
+    --mudkipghast-pfp: url("https://collective.miltza.fyi/storage/40/8d/e37556774642854697f5a878c77817e2f5b05225f2741ab41ab13e5f6e2d.webp");
     --mudkipghast-color: rgb(0,116,166);
 }
 
@@ -34,8 +34,8 @@
   .content {
     display: block;
     height: 100%;
-    border-color: var(--friend-color);
-    color: var(--friend-color) !important;
+    border-color: var(--mudkipghast-color);
+    color: var(--mudkipghast-color) !important;
     }
     &.self {
         .from {
