@@ -1,0 +1,114 @@
+:root {
+    --your-name-pfp: url("https://collective.miltza.fyi/uploads/5d3192fd315fbfa0/homunculusmuddpfp2.png");
+    --your-name-theme-color: rgb(0,255,255);
+}
+
+#chat .msg[data-from="your-name"] {
+    align-items: center;
+    border: 1px var(--your-name-theme-color) solid;
+    margin-left: auto;
+    width: calc(100% - 100px);
+    flex-wrap: wrap;
+    isolation: isolate;
+    background-color: var(--dark-color);
+    z-index: 1;
+    .from {
+        flex: 1 1 auto;
+        flex-grow: 0;
+        padding: 0 0 0 0;
+        margin: 8px 0 0 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 16px;
+        top: auto;
+        bottom: auto;
+        line-height: 0;
+        width: auto;
+        border: none;
+        overflow: visible;
+        .user {
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            justify-content: center;
+            background-color: var(--your-name-theme-color);
+            line-height: normal;
+            color: var(--dark-color) !important;
+        }
+        .user::before {
+           display: none;
+        }
+    }
+    .content {
+        flex: 0 0 100%;
+        margin-top: 0px;
+        padding-top: 0;
+        display: block;
+        height: 100%;
+        border: none;
+        color: var(--your-name-theme-color) !important;
+    }
+    .time {
+        flex: 1 1 auto;
+        text-align: left;
+        margin: 8px 0 0 0;
+    }
+    &.self {
+        .from {
+            padding: 0 0px 0 12px;
+        }
+    }
+    &::before {
+        line-height: 0;
+        content: "";
+        display: block;
+        width: 64px !important;
+        height: 64px !important;
+        position: absolute;
+        left: -72px;
+        background: var(--your-name-pfp) var(--dark-color);
+        box-sizing: border-box;
+        background-size: cover;
+        background-position: center;
+        border: 2px double var(--your-name-theme-color);
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: -0.95em;
+        width: 14px;
+        mask-image: none;
+        height: 1px;
+        background: black;
+        border: 3px double var(--your-name-theme-color);
+        z-index: -2;
+    }
+}
+#chat .msg[data-from="your-name"].self {
+    margin-left: 8px;
+    margin-right: auto;
+    &::before {
+        right: -72px !important;
+        left: auto;
+    }
+    &::after {
+        right: -0.95em !important;
+        left: auto;
+    }
+}
+#chat .msg[data-type="message"][data-from="your-name"] + .msg[data-type="message"][data-from="your-name"] .from {
+    display: none;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#chat .msg[data-type="message"][data-from="your-name"] + .msg[data-type="message"][data-from="your-name"] {
+    margin-top: 2px;
+}
