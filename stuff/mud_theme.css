@@ -1,9 +1,9 @@
 :root {
-    --mudkipghast-pfp: url("https://collective.miltza.fyi/storage/40/8d/e37556774642854697f5a878c77817e2f5b05225f2741ab41ab13e5f6e2d.webp");
+    --mudkipghast-pfp: url("https://collective.miltza.fyi/uploads/3960b439d35394d5/mudkipghast.png");
     --mudkipghast-color: rgb(0,116,166); 
 }
 
-#chat .msg[data-from="mudkipghast"] {
+#chat .msg[data-type="message"][data-from="mudkipghast"] {
     align-items: center;
     .from {
         padding: 0 12px 0 0px;
