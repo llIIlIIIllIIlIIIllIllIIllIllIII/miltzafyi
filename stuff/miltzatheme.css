@@ -46,3 +46,139 @@
 #chat .msg[data-type="message"][data-from="miltza"] + .msg[data-type="message"][data-from="miltza"] {
     margin-top: 2px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --lilymoonseye-pfp: url("https://collective.miltza.fyi/uploads/256535d0f190c84c/the_hi.gif");
+    --lilymoonseye-theme-color: rgb(13, 255, 138);
+}
+
+#chat .msg[data-type="message"][data-from="lilymoonseye"] {
+    font-family: "Noto Sans", sans-serif;
+    align-items: center;
+    border: 1px var(--lilymoonseye-theme-color) solid;
+    margin-left: auto;
+    width: calc(100% - 100px);
+    flex-wrap: wrap;
+    isolation: isolate;
+    background-color: var(--dark-color);
+    z-index: 1;
+    .from {
+        order: -1;
+        flex: 1 1 auto;
+        flex-grow: 0;
+        padding: 0 0 0 0;
+        margin: 8px 0 0 12px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 16px;
+        top: auto;
+        bottom: auto;
+        line-height: 0;
+        width: auto;
+        border: none;
+        overflow: visible;
+        .user {
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 0.6em;
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+            justify-content: center;
+            background-color: var(--lilymoonseye-theme-color);
+            line-height: normal;
+            color: var(--dark-color) !important;
+        }
+        .user::before {
+           display: none;
+        }
+    }
+    .content {
+        flex: 0 0 100%;
+        margin-top: 0px;
+        padding-top: 0;
+        display: block;
+        height: 100%;
+        border: none;
+        color: var(--lilymoonseye-theme-color) !important;
+    }
+    .time {
+        flex: 1 1 auto;
+        text-align: left;
+        margin: 8px 0 0 0;
+    }
+    &.self {
+        .from {
+            padding: 0 0px 0 12px;
+        }
+    }
+    &::before {
+        line-height: 0;
+        content: "";
+        display: block;
+        width: 64px !important;
+        height: 64px !important;
+        position: absolute;
+        left: -72px;
+        background: var(--lilymoonseye-pfp) var(--dark-color);
+        box-sizing: border-box;
+        background-size: cover;
+        background-position: center;
+        border: 2px double var(--lilymoonseye-theme-color);
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: -0.95em;
+        width: 14px;
+        mask-image: none;
+        height: 1px;
+        background: black;
+        border: 3px double var(--lilymoonseye-theme-color);
+        z-index: -2;
+    }
+}
+#chat .msg[data-from="lilymoonseye"].self {
+    margin-left: 12px;
+    margin-right: auto; 
+    width: calc(100% - 112px);
+    &::before {
+        right: -72px !important;
+        left: auto;
+    }
+    &::after {
+        right: -0.95em !important;
+        left: auto;
+    }
+    .from {
+        margin-left: 0px;
+    }
+    .time {
+        order: -1;
+    }
+}
+#chat .msg[data-type="message"][data-from="lilymoonseye"] + .msg[data-type="message"][data-from="lilymoonseye"] .from,
+#chat .msg[data-type="message"][data-from="lilymoonseye"] + .msg[data-type="message"][data-from="lilymoonseye"] .time,
+#chat .msg[data-type="message"][data-from="lilymoonseye"] + .msg[data-type="message"][data-from="lilymoonseye"]::before,
+#chat .msg[data-type="message"][data-from="lilymoonseye"] + .msg[data-type="message"][data-from="lilymoonseye"]::after {
+    display: none;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#chat .msg[data-type="message"][data-from="lilymoonseye"] + .msg[data-type="message"][data-from="lilymoonseye"] {
+    margin-top: 0.6em;
+    margin-left: 12px;
+    width: calc(100% - 24px);
+    .content {
+        padding: 0.6em;
+    }
+}
