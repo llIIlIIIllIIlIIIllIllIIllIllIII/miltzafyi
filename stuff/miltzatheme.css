@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 #chat .msg[data-type="message"][data-from="miltza"] {
     align-items: center;
     .from {
@@ -46,8 +48,6 @@
 #chat .msg[data-type="message"][data-from="miltza"] + .msg[data-type="message"][data-from="miltza"] {
     margin-top: 2px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --lilymoonseye-pfp: url("https://collective.miltza.fyi/uploads/256535d0f190c84c/the_hi.gif");
