@@ -1,4 +1,4 @@
-#chat .msg[data-from="miltza"] {
+#chat .msg[data-type="message"][data-from="miltza"] {
     align-items: center;
     .from {
         padding: 0 12px 0 0px;
