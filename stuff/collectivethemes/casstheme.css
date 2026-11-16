@@ -1,0 +1,50 @@
+#chat .msg[data-type="message"][data-from="cassini"] {
+    align-items: center;
+    .from {
+        padding: 0 12px 0 0px;
+        height: auto;
+        top: auto;
+        bottom: auto;
+        line-height: 0;
+        width: auto;
+        .user {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 64px !important;
+            height: 64px !important;
+            background: url("https://collective.miltza.fyi/uploads/ca2fbf7e56453c82/cassditherpfp.png") var(--dark-color);
+            background-size: cover;
+            background-position: center;
+            border: 2px double #FF8080;
+            border-radius: 50%;
+            margin: 0;
+            padding: 0;
+            &::before {
+                border-color: #FF8080
+            }
+        }
+    }
+  .content {
+    display: block;
+    height: 100%;
+    height: 100%;
+    border-color: #FF8080;
+    color: #FF8080 !important;
+    }
+    &.self {
+        .from {
+            padding: 0 0px 0 12px;
+        }
+    }
+}
+#chat .msg[data-type="message"][data-from="cassini"] + .msg[data-type="message"][data-from="cassini"] .from {
+    display: none;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#chat .msg[data-type="message"][data-from="cassini"] + .msg[data-type="message"][data-from="cassini"] {
+    margin-top: 2px;
+}
+
