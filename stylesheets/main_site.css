@@ -134,7 +134,8 @@ body {
             border: var(--friend-color) 4px double;
             border-radius: 5em;
             background-color: var(--dark-color);
-            background-image: url("../assets/Miltza_Portrait.gif"), url("../assets/corruripple.gif");
+            background-image: url("../assets/miltzaportraithighres.png"), url("../assets/corruripple.gif");
+            background-clip: padding-box;
             background-repeat: repeat;
             background-size: cover;
             filter: drop-shadow(0px 0px 16px var(--friend-color));
