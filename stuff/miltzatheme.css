@@ -16,9 +16,10 @@
             width: 64px !important;
             height: 64px !important;
             background: url("https://collective.miltza.fyi/uploads/5dcc86167e694754/miltzaportraithighres.png") var(--dark-color);
-            background-size: cover;
+            background-size: 100%;
             background-position: center;
             border: 2px double var(--friend-color);
+            background-clip: padding-box;
             border-radius: 50%;
             margin: 0;
             padding: 0;
